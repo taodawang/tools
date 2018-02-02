@@ -99,15 +99,7 @@ var tools = (function(){
         }
         return obj;
 	};
-	//公用ajax
-	var comAjax = function(type,url,data,callback){
-		return $.ajax({
-			type:type,
-			url:url,
-			data : data,
-			success : callback,
-		});
-	};
+
 	//回到顶部动画
 	var backToTop = function (rate) {
 	    var doc = document.body.scrollTop? document.body : document.documentElement;
@@ -155,4 +147,4 @@ var tools = (function(){
 		funDownload : funDownload,
 	}
 
-})(jQuery);
+})();
